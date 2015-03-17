@@ -11,10 +11,9 @@ import javax.lang.model.type.TypeMirror;
 import javax.lang.model.util.Elements;
 import javax.lang.model.util.Types;
 
-
 class Visitor extends TreePathScanner<Void, Void>
 {
-	static final String u = "name.ltp.ujint.u";
+	static final String u = name.ltp.ujint.u.class.getCanonicalName();
 
 	final JavacTask task;
 
